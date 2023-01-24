@@ -15,8 +15,7 @@
 11. Digraph - BFS and DFS
 12. Hash Table
 
-> **Note**
-> `.test` files are sample inputs for corresponding `.c` programs.
+> **Note**: `.test` files are sample inputs for corresponding `.c` programs.
 
 ```sh
 # compile
