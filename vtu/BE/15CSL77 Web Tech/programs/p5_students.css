@@ -1,0 +1,46 @@
+STUDENTDATA {
+	background-color: oldlace;
+	width: 100%;
+}
+
+STUDENT {
+	display: block;
+	margin-bottom: 30pt;
+	margin-left: 0;
+}
+
+USN {
+	display: block;
+	color: orange;
+	font-size: 20pt;
+}
+
+NAME {
+	display: block;
+	color: blue;
+	font-size: 20pt;
+}
+
+COLLEGE {
+	display: block;
+	color: #000000;
+	margin-left: 20pt;
+}
+
+BRANCH {
+	display: block;
+	color: #000000;
+	margin-left: 30pt;
+}
+
+EMAIL {
+	display: block;
+	color: #000000;
+	margin-left: 40pt;
+}
+
+YEAR {
+	display: block;
+	color: #000000;
+	margin-left: 50pt;
+}

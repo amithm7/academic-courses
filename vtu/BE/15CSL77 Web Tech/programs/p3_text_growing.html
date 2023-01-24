@@ -1,0 +1,35 @@
+<body>
+	<p id="txt" style="text-align: center;"></p>
+	<script>
+		var fs = 5;
+		var ele = document.getElementById("txt");
+
+		var growTimer = setInterval(grow, 100);
+		var shrinkTimer;
+
+		function grow() {
+			ele.innerHTML = 'Text-Growing';
+
+			ele.style.color = 'red';
+			ele.style.fontSize = ++fs + "pt";
+			// ele.setAttribute('style', "font-size: " + fs++ + "pt; color: red")
+
+			if (fs == 50) {
+				clearInterval(growTimer);
+				shrinkTimer = setInterval(shrink, 100);
+			}
+		}
+
+		function shrink() {
+			ele.innerHTML = 'Text-Shrinking';
+
+			ele.style.color = 'blue';
+			ele.style.fontSize = --fs + "pt";
+
+			if (fs == 5) {
+				clearInterval(shrinkTimer)
+				growTimer = setInterval(grow, 100);
+			}
+		}
+	</script>
+</body>

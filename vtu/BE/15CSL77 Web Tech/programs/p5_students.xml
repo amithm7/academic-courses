@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="p5_students.css"?>
+
+<STUDENTDATA>
+	<STUDENT>
+		<USN>123abc567</USN>
+		<NAME>XYZ</NAME>
+		<COLLEGE>AMC</COLLEGE>
+		<BRANCH>CSE</BRANCH>
+		<YEAR>2018</YEAR>
+		<EMAIL>student@college.com</EMAIL>
+	</STUDENT>
+	<STUDENT>
+		<USN>123abc567</USN>
+		<NAME>XYZ</NAME>
+		<COLLEGE>AMC</COLLEGE>
+		<BRANCH>CSE</BRANCH>
+		<YEAR>2018</YEAR>
+		<EMAIL>student@college.com</EMAIL>
+	</STUDENT>
+	<STUDENT>
+		<USN>123abc567</USN>
+		<NAME>XYZ</NAME>
+		<COLLEGE>AMC</COLLEGE>
+		<BRANCH>CSE</BRANCH>
+		<YEAR>2018</YEAR>
+		<EMAIL>student@college.com</EMAIL>
+	</STUDENT>
+</STUDENTDATA>

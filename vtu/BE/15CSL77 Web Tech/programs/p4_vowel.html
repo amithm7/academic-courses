@@ -1,0 +1,53 @@
+<html>
+
+<head>
+	<script>
+		function vowel() {
+			var str = stringForm.str.value;
+			var s = str.toUpperCase();
+
+			for (var i = 0; i < s.length; i++) {
+				var ch = s.charAt(i);
+
+				if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+					alert("Left-most vowel of the string " + str + " is " + ch + " at the position " + (i + 1));
+					// exit; // ??? why does this work?
+					return;
+				}
+			}
+
+			alert("The String entered " + str + " has no vowels");
+		}
+
+		function reverse() {
+			var num = numberForm.num.value;
+			var n = num;
+
+			var rev = 0, rem;
+
+			while (n > 0) {
+				rem = n % 10;
+				rev = rev * 10 + rem;
+				n = Math.floor(n / 10);
+			}
+
+			alert("Reverse of " + num + " is " + rev);
+		}
+	</script>
+</head>
+
+<body>
+	<h2>Finding left-most vowel position</h2>
+	<form name="stringForm" onsubmit="vowel()">
+		<input type="text" name="str">
+		<input type="submit" name="submit">
+	</form>
+
+	<h2>Reverse of a number</h2>
+	<form name="numberForm" onsubmit="reverse()">
+		<input type="text" name="num">
+		<input type="submit" name="submit">
+	</form>
+</body>
+
+</html>

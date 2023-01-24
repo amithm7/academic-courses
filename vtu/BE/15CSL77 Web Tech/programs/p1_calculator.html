@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Simple Calculator</title>
+
+	<script type="text/javascript">
+		// Update calculator screen wrt button pressed
+		function update(text) {
+			document.getElementById("screen").value += text;
+		}
+
+		// Evaluate result and update it on calculator screen
+		function result() {
+			document.getElementById("screen").value =
+				eval(document.getElementById("screen").value);
+		}
+
+		// Clear calculator screen
+		function reset() {
+			document.getElementById("screen").value = '';
+		}
+	</script>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			text-align: center;
+		}
+
+		table {
+			margin: auto;
+		}
+
+		input, button {
+			padding: 1em;
+			width: 100%;
+			font-size: larger;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Simple Calculator</h1>
+	<table border="20">
+		<tr>
+			<td colspan="4">
+				<input type="text" id="screen" readonly>
+			</td>
+		</tr>
+		<tr>
+			<td><button onclick="update(7)">7</button></td>
+			<td><button onclick="update(8)">8</button></td>
+			<td><button onclick="update(9)">9</button></td>
+			<td><button onclick="update('+')">+</button></td>
+		<tr>
+			<td><button onclick="update(4)">4</button></td>
+			<td><button onclick="update(5)">5</button></td>
+			<td><button onclick="update(6)">6</button></td>
+			<td><button onclick="update('-')">-</button></td>
+		<tr>
+			<td><button onclick="update(1)">1</button></td>
+			<td><button onclick="update(2)">2</button></td>
+			<td><button onclick="update(3)">3</button></td>
+			<td><button onclick="update('*')">*</button></td>
+		<tr>
+			<td><button onclick="reset()">C</button></td>
+			<td><button onclick="update(0)">0</button></td>
+			<td><button onclick="result()">=</button></td>
+			<td><button onclick="update('/')">/</button></td>
+		</tr>
+	</table>
+</body>
+
+</html>
